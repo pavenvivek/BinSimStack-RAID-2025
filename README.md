@@ -31,11 +31,11 @@ We filtered the functions whose CFG had less than five basic blocks. This result
 ## Experimental Setup and Details
 For all the experiments, we used 80% of the dataset for training and 20% for testing. Also, the training and testing sets are kept disjoint for all experiments in the paper. We conducted 33 experiments in total spanning more than 250 models (including baselines) as follows.
 
-  - 25 experiments to analyze the five transformations _Flatten_, _Virtualize_, _O0 <-> O1_, _O0 <-> O2_, and _O0 <-> O3_ applied to five libraries: _OpenSSL_, _ImageMagick_, _Libxml2_, _Binutils_, and  _Redis_. 
-  - 5 experiments for scalability and generalizability analysis 
-  - 1 experiment for malware and vulnerability analysis
-  - 1 experiment to assesses the robustness of the ensemble framework 
-  - 1 experiment to analyze the relative performance of different ensemble methods
+  - 25 experiments to analyze the five transformations _Flatten_, _Virtualize_, _O<sub>0</sub> <-> O1_, _O0 <-> O2_, and _O0 <-> O3_ applied to five libraries: _OpenSSL_, _ImageMagick_, _Libxml2_, _Binutils_, and  _Redis_. 
+  - 5 experiments for scalability and generalizability analysis.
+  - 1 experiment for malware and vulnerability analysis.
+  - 1 experiment to assesses the robustness of the ensemble framework. 
+  - 1 experiment to analyze the relative performance of different ensemble methods.
   
 For the ensemble approach BinSimStack, we selected jTrans, Palmtree, Gemini-trp, and Cirrina to operate at layers L1, L2, L3, and L4, respectively. For all the experiments, BinSimStack combines the predictions of individually trained models using the weighted aggregate ensemble method. We conducted all the experiments on Ubuntu 22.04 LTS with 64 GB RAM, 32-core Intel i9-13900HX x86_64 CPU architecture, and 8 GB NVIDIA GeForce RTX 4070 GPU. We used Angr as the disassembler for all the tools in the ensemble. Please refer the main paper for more details. 
 
