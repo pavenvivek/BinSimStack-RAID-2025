@@ -1,6 +1,6 @@
 # Malware and Vulnerability Analysis using Graph-Synchronized Language Model
 
-This repository contains the implementation for the paper titled _Malware and Vulnerability Analysis using Graph-Synchronized Language Model_ that got accepted into the 28th International Symposium on Research in Attacks, Intrusions, and Defenses [RAID 2025](https://raid2025.github.io/call.html), Queensland, Australia (October 2025).
+This repository contains the implementation for the paper titled _Malware and Vulnerability Analysis using Graph-Synchronized Language Model_ that got accepted into the 28th International Symposium on Research in Attacks, Intrusions, and Defenses ([RAID 2025](https://raid2025.github.io/call.html)), Queensland, Australia (October 2025).
 
 ## Dataset
 Our dataset includes 17 libraries: 
