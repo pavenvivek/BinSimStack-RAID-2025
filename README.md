@@ -50,7 +50,7 @@ python3 generate_data.py
 python3 generate_data_angr.py
 ```
 
-For code optimization:.
+For code optimization:
 
 ```
 python3 generate_data_cmp_flags.py
