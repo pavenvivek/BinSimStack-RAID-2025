@@ -103,6 +103,7 @@ python3 eval_cmb.py
 
 ## Sample output for OpenSSL and Flatten
 
+```
 top_1 -> 95.25547445255475
 top_2 -> 97.99270072992701
 top_3 -> 98.72262773722628
@@ -231,4 +232,4 @@ Gemini   average accuracy after 1 runs: 99.84176582341766
 Palmtree average accuracy after 1 runs: 99.75752424757525
 jTrans   average accuracy after 1 runs: 99.9751691497517
 Average accuracy combined (BinSimStack) after 1 runs: 99.99200079992
-
+```
