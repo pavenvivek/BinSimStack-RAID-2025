@@ -106,6 +106,7 @@ Note: Set the weights for different models (refer to the paper) inside utils_top
 ## Sample output for OpenSSL and Flatten
 
 ```
+BinSimStack:
 top_1 -> 95.25547445255475
 top_2 -> 97.99270072992701
 top_3 -> 98.72262773722628
