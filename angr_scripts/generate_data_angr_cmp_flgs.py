@@ -96,7 +96,6 @@ def generate_function_data(proj, cfg, func, trs, cflg, filename):
 
 if __name__ == "__main__":
 
-    #src_path = f"{binary_path}" #/home/paven/Studies/Spring_2024/sample_obj/"
     files = glob.glob(f"{binary_path}O0/" + "*.o")
     files_2 = glob.glob(f"{binary_path}O1/" + "*.o")
     files_3 = glob.glob(f"{binary_path}O2/" + "*.o")
