@@ -36,17 +36,17 @@ The repository is built on top of [Gemini](https://github.com/xiaojunxu/dnn-bina
 
 For building the dataset, use the code inside angr_scripts. The following commands will run Tigress and build the necessary cfg and assembly contents and will also push it into mongodb.
 
-'''
+```
 python3 generate_data.py
 python3 generate_data_angr.py
-'''
+```
 
 For code optimization flags, use the following commands.
 
-'''
+```
 python3 generate_data_cmp_flags.py
 python3 generate_data_angr_cmp_flags.py
-'''
+```
 
 Note: You might have to do make build on the necessary C libraries before running the above commands. Also, set the parameters in params.py file according to your local configurations.
 
