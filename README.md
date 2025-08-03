@@ -101,7 +101,7 @@ python3 eval_save_simple.py
 
 Note: Make sure to set the correct parameters in settings.py and data_simple.py (line 154 to 157 and 212 to 215) according to the transformation and library.
 
-"python3 eval_save_simple.py" will insert the final cosine score for jTrans inside MongoDB. We used external files (like inc_fns_lst_flt_patch.py) to make sure the order of functions inside MongoDB is the same for all the 4 models. This is important for the ensemble to merge correctly.
+"python3 eval_save_simple.py" will insert the final cosine score for jTrans inside MongoDB. We used external files (like inc_fns_lst_flt_patch.py for OpenSSL and Flatten) to make sure the order of functions inside MongoDB is the same for all the 4 models. This is important for the ensemble to merge the scores correctly.
 
 Once we have the cosine scores for all the models, we can run the following command to see the performance of the ensemble and contributions of the individual models.
 
