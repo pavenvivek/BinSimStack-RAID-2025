@@ -10,18 +10,25 @@ FUNC_INFO_COLLECTION = "func_info"
 CODE_ENC_COLLECTION = "code_encodings"
 DIFF_COLLECTION = "diff_graph"
 
-#FUNC_INFO_DB = "trees_db_func_info_flt"
+FUNC_INFO_DB = "trees_db_func_info_flt"
 #FUNC_INFO_DB = "trees_db_func_info_viz"
 #FUNC_INFO_DB = "trees_db_func_info_cflgs"
 #FUNC_INFO_DB = "trees_db_func_info_cflgs_O2"
-FUNC_INFO_DB = "trees_db_func_info_cflgs_O3"
+#FUNC_INFO_DB = "trees_db_func_info_cflgs_O3"
+
+#FUNC_INFO_DB = "func_info_db"
+TREES_DB = "angr_proj_db"
+CODE_ENC_DB = "encodings_db"
+DIFF_DB = "diff_proj_db"
+
 
 #--
 #TREES_DB = "trees_db_angr_flt_proj_final"
 #TREES_DB = "trees_db_angr_viz_proj_final"
 #TREES_DB = "trees_db_angr_malw_vuln_viz_proj_final"
-TREES_DB = "trees_db_angr_cflgs_proj_final"
-
+#TREES_DB = "trees_db_angr_cflgs_proj_final"
+#TREES_DB = "trees_db_angr_flt_enc_new"
+#TREES_DB = ""
 #--
 
 #--
@@ -31,26 +38,59 @@ TREES_DB = "trees_db_angr_cflgs_proj_final"
 
 #CODE_ENC_DB = "trees_db_encodings_cflgs_O0_O1"
 #CODE_ENC_DB = "trees_db_encodings_cflgs_O0_O2"
-CODE_ENC_DB = "trees_db_encodings_cflgs_O0_O3"
+#CODE_ENC_DB = "trees_db_encodings_cflgs_O0_O3"
+#CODE_ENC_DB = ""
 
 #--
 
 #--
 # test_data
+#DIFF_DB = "trees_db_angr_diff_flt_proj_final_scale_500"
+#DIFF_DB = "trees_db_angr_diff_flt_proj_final_scale_3500"
+#DIFF_DB = "trees_db_angr_diff_flt_proj_final_scale_7500"
+
+#DIFF_DB = "trees_db_angr_diff_viz_proj_final_scale_malw"
+#DIFF_DB = "trees_db_angr_diff_viz_proj_final_scale_500"
+#DIFF_DB = "trees_db_angr_diff_viz_proj_final_scale_3500"
+#DIFF_DB = "trees_db_angr_diff_viz_proj_final_scale_7500"
+
+
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O1_scale_500"
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O1_scale_3500"
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O1_scale_7500"
+
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O2_scale_500"
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O2_scale_3500"
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O2_scale_7500"
+
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O3_scale_500"
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O3_scale_2500"
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O3_scale_5000"
+
+
 #DIFF_DB = "trees_db_angr_diff_flt_proj_final"
-#DIFF_DB = "trees_db_angr_diff_flt_nnup"
-#DIFF_DB = "trees_db_angr_diff_viz_nnup"
-#DIFF_DB = "trees_db_angr_diff_O0_O1_nnup"
-#DIFF_DB = "trees_db_angr_diff_O0_O2_nnup"
-DIFF_DB = "trees_db_angr_diff_O0_O3_nnup"
+#DIFF_DB = "trees_db_angr_diff_viz_proj_final"
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O1"
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O2"
+#DIFF_DB = "trees_db_angr_diff_cflgs_proj_final_O0_O3"
+
+#DIFF_DB = "trees_db_angr_diff_flt_encArth"
+
+# validation_data
+#DIFF_DB = "trees_db_angr_diff_flt_proj_final_vald"
+#DIFF_DB = "trees_db_angr_diff_viz_proj_final_vald"
 #--
 
-transformation = "O0<->O3" #"Virtualize" #"Flatten" #"N/A" # "EncodeArithmetic, Virtualize" #"EncodeArithmetic, Flatten" # # # #
-model = "Nonuplet" #"Cirrina" #"Gemini_trp" #"Palmtree_trp" #"Gemini"
+# important - for Flt and Viz the diff_lst order of functions is different from corresponding func_db. Use the patch files for Flatten(inc_fns_lst_flt_patch.py) and Viz (inc_fns_lst_viz_patch.py)
+
+transformation = "Flatten" #"O0<->O1" #"EncodeArithmetic, Flatten" #"Virtualize" #"O0<->O3" #"O0<->O3" #"N/A" # "EncodeArithmetic, Virtualize" #"EncodeArithmetic, Flatten" # # # #
+model = "jTrans" #"Gemini_trp" #"Palmtree_trp" #"Cirrina" # ##"Gemini"
+model_db = model
 inc_libraries = ["openssl"]
-#inc_libraries = ["igraph", "dbus", "allegro", "libmicrohttpd", "gsl", "alsa", "libmongoc", "libtomcrypt", "coreutils", "sqlite", "curl", "musl"] #, "scale-O0-O1-500"] #"scale-flt-7500"] # #"scale-malw-viz-7500"
-#inc_libraries = ["igraph", "dbus", "allegro", "libxml2", "libmicrohttpd", "gsl", "alsa", "libmongoc", "binutils", "libtomcrypt", "imagemagick", "coreutils", "redis", "sqlite", "curl", "musl", "openssl", "scale-malw-viz-3500"]
-expr_num = "7" #"37-scale-500" #"37" #"38-scale-malw-viz-3500"
+lib2 = "___openssl"
+#inc_libraries = ["igraph", "dbus", "allegro", "libmicrohttpd", "gsl", "alsa", "libmongoc", "libtomcrypt", "coreutils", "sqlite", "curl", "musl", "scale-O0-O3-5000"]#"scale-viz-7500"] #"scale-flt-7500"] #"scale-malw-viz-7500"] 
+#inc_libraries = ["igraph", "dbus", "allegro", "libxml2", "libmicrohttpd", "gsl", "alsa", "libmongoc", "binutils", "libtomcrypt", "imagemagick", "coreutils", "redis", "sqlite", "curl", "musl", "openssl", "scale-malw-viz-7500"]
+expr_num = "1" #"41-scale-O0-O3-5000" #"38-scale-malw-viz-7500" #"39-scale-viz-7500" #"36-scale-7500" #"40-scale-O0-O2-7500" #"37-scale-7500" #"1" #"36-scale-7500" # "37" #
 
 #libraries
 #"igraph" #"dbus" #"allegro" #"libxml2" #"libmicrohttpd" #"gsl" #"alsa" #"libmongoc" #"binutils" #"libtomcrypt" #"imagemagick" #"coreutils" #"redis" #"sqlite" #"curl" #"musl" #"openssl" ##  # zlib - compiled as part of binutils
@@ -110,7 +150,8 @@ malw_fns = ['malware_Jackshell_analyz', 'malware_Moses_DoPrivmsg', 'malware_Buht
 # scalablity and generalizability
 # 36 -> flt
 # 37 -> O0 <-> O1
-
-# malw and vuln
-# 38 -> viz
+# 38 -> viz # malw and vuln
+# 39 -> viz
+# 40 -> O0 <-> O2
+# 41 -> O0 <-> O3
 

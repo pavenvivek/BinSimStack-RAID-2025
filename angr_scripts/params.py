@@ -1,7 +1,4 @@
-#TREES_DB = "trees_db_angr_arch_cflg_new"
-#TREES_DB = "trees_db_angr_flt_m"
-#TREES_DB = "trees_db_angr_viz_m"
-TREES_DB = "trees_db_angr_cflg_m"
+TREES_DB = "angr_proj_db"
 
 CODE_GRAPH_COLLECTION = "code_graph"
 MONGO_CLIENT = "mongodb://localhost:27017/"
@@ -400,7 +397,7 @@ transformation_cmd_2 = "--Transform=EncodeArithmetic"  #"--Transform=Flatten" #
 # Platform information
 
 architecture     = "x86_64" #"aarch64" #"mips64" # #
-library          = "igraph" #"dbus" #"allegro" #"libxml2" #"libmicrohttpd" #"gsl" #"alsa" #"libmongoc" #"binutils" #"libtomcrypt" #"imagemagick" #"coreutils" #"redis" #"sqlite" #"curl" #"musl" #"openssl" ##  # zlib - compiled as part of binutils
+library          = "openssl" #"igraph" #"dbus" #"allegro" #"libxml2" #"libmicrohttpd" #"gsl" #"alsa" #"libmongoc" #"binutils" #"libtomcrypt" #"imagemagick" #"coreutils" #"redis" #"sqlite" #"curl" #"musl" # ##  # zlib - compiled as part of binutils
 compiler         = "gcc"
 compiler_version = "11.4.0"
 cpu              = "13th Gen Intel(R) Core(TM) i9-13900HX"

@@ -31,7 +31,7 @@ def tigress_trs(file_dct):
                #f"--Functions={fns} "
                f"{transformation_cmd} "
                f"--Functions={fns} "
-               + igraph_inc +
+               + openssl_inc +
                f"--out={trs_src_path}{fl_name}.c "
                f"-c {files[i]}")
 
@@ -76,7 +76,7 @@ def generate_obj_files(files, adj_mat_lst, bin_path="./obj", trs="N/A"):
                    #f"mips64-linux-gnuabi64-gcc -c " 
                    #f"aarch64-linux-gnu-gcc -c " #"
                    #f"powerpc-linux-gnu-gcc -c "
-                   + igraph_inc +
+                   + openssl_inc +
                    #f"--param case-values-threshold=5 " # additional flag for aarch64
                    f"{files[i]} "
                    f"-o {bin_path}{fl_name}.o")
