@@ -136,7 +136,7 @@ Cirrina        : total -> 45.52919708029197, unique -> bef. aggregate: 0.1824817
 Gemini_triplet : total -> 71.44160583941606, unique -> bef. aggregate: 1.0036496350364963, aft. aggregate: 0.5474452554744526 
 Palmtree       : total -> 73.35766423357664, unique -> bef. aggregate: 2.9197080291970803, aft. aggregate: 0.18248175182481752 
 jTrans         : total -> 89.59854014598541, unique -> bef. aggregate: 6.021897810218978, aft. aggregate: 0.18248175182481752 
-BinSimStack      : total -> 95.8029197080292, unique -> 0.8211678832116789 
+BinSimStack    : total -> 95.8029197080292, unique -> 0.8211678832116789 
 Agg. missed    : total -> 0.9124087591240875 
 Agg. retained  : total -> 94.98175182481752 
 Model union    : total -> 95.8941605839416 
@@ -157,7 +157,7 @@ Cirrina        : total -> 60.94890510948905, unique -> bef. aggregate: 0.1824817
 Gemini_triplet : total -> 82.75547445255475, unique -> bef. aggregate: 0.36496350364963503, aft. aggregate: 0.18248175182481752 
 Palmtree       : total -> 83.94160583941606, unique -> bef. aggregate: 1.0036496350364963, aft. aggregate: 0.0 
 jTrans         : total -> 95.34671532846716, unique -> bef. aggregate: 3.2846715328467155, aft. aggregate: 0.2737226277372263 
-BinSimStack      : total -> 98.35766423357664, unique -> 0.09124087591240876 
+BinSimStack    : total -> 98.35766423357664, unique -> 0.09124087591240876 
 Agg. missed    : total -> 0.7299270072992701 
 Agg. retained  : total -> 98.26642335766424 
 Model union    : total -> 98.9963503649635 
@@ -178,7 +178,7 @@ Cirrina        : total -> 69.52554744525547, unique -> bef. aggregate: 0.1824817
 Gemini_triplet : total -> 87.5, unique -> bef. aggregate: 0.36496350364963503, aft. aggregate: 0.2737226277372263 
 Palmtree       : total -> 87.86496350364963, unique -> bef. aggregate: 0.36496350364963503, aft. aggregate: 0.0 
 jTrans         : total -> 97.99270072992701, unique -> bef. aggregate: 1.7335766423357664, aft. aggregate: 0.18248175182481752 
-BinSimStack      : total -> 99.08759124087592, unique -> 0.0 
+BinSimStack    : total -> 99.08759124087592, unique -> 0.0 
 Agg. missed    : total -> 0.7299270072992701 
 Agg. retained  : total -> 99.08759124087592 
 Model union    : total -> 99.81751824817519 
@@ -199,7 +199,7 @@ Cirrina        : total -> 75.72992700729927, unique -> bef. aggregate: 0.0, aft.
 Gemini_triplet : total -> 91.42335766423358, unique -> bef. aggregate: 0.0, aft. aggregate: 0.0 
 Palmtree       : total -> 90.32846715328468, unique -> bef. aggregate: 0.2737226277372263, aft. aggregate: 0.0 
 jTrans         : total -> 98.8138686131387, unique -> bef. aggregate: 1.3686131386861315, aft. aggregate: 0.0 
-BinSimStack      : total -> 99.81751824817519, unique -> 0.0 
+BinSimStack    : total -> 99.81751824817519, unique -> 0.0 
 Agg. missed    : total -> 0.0 
 Agg. retained  : total -> 99.81751824817519 
 Model union    : total -> 99.81751824817519 
@@ -220,7 +220,7 @@ Cirrina        : total -> 80.47445255474453, unique -> bef. aggregate: 0.0, aft.
 Gemini_triplet : total -> 93.33941605839416, unique -> bef. aggregate: 0.0, aft. aggregate: 0.0 
 Palmtree       : total -> 92.06204379562044, unique -> bef. aggregate: 0.09124087591240876, aft. aggregate: 0.0 
 jTrans         : total -> 99.81751824817519, unique -> bef. aggregate: 1.0036496350364963, aft. aggregate: 0.0 
-BinSimStack      : total -> 99.90875912408758, unique -> 0.0 
+BinSimStack    : total -> 99.90875912408758, unique -> 0.0 
 Agg. missed    : total -> 0.0 
 Agg. retained  : total -> 99.90875912408758 
 Model union    : total -> 99.90875912408758 
