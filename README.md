@@ -42,7 +42,7 @@ For the ensemble approach BinSimStack, we selected jTrans, Palmtree, Gemini-trp,
 ## Run Commands
 The repository is built on top of [Gemini](https://github.com/xiaojunxu/dnn-binary-code-similarity) and [jTrans](https://github.com/vul337/jTrans). The folder "GNN-based" contains the code for building the graph-based models Cirrina, Gemini-trp, and Palmtree. The folder "LLM-based" contains the code for BERT-based jTrans. To run the codes inside LLM-based, first download "models.tar.gz" from jTrans [git-repo](https://github.com/vul337/jTrans) and extract the two files optimizer.pt and pytorch_model.bin and place it inside "LLM-based/models/jTrans-pretrain/".
 
-For building the dataset, use the code inside Preprocessing. The following commands will run Tigress/Compiler Optimization, build the necessary cfg and assembly contents, and push it into MongoDB.
+For building the dataset, use the code inside Preprocessing. The following commands will run Tigress/Compiler Optimization, build the necessary cfg and assembly contents, and push them into MongoDB.
 
 For code obfuscation:
 ```
