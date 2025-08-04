@@ -109,7 +109,7 @@ Once we have the cosine scores for all the models, we can run the following comm
 python3 eval_cmb.py
 ```
 
-Note: Set the weights for different models (refer to the paper) inside utils_top_stat.py (line 283 to 285). Also, we have given the sample db files for OpenSSL and Flatten that contain the output of running the above commands inside db_files.tar.xz.
+Note: Set the weights for different models (refer to the paper) inside utils_top_stat.py (line 283 to 285). Also, we have given the sample db files that contain the output of running the above commands for library "OpenSSL" and transformation "Flatten" inside db_files.tar.xz.
 
 ## Sample output for OpenSSL and Flatten
 
