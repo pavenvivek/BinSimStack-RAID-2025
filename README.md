@@ -77,7 +77,7 @@ python3 train.py
 python3 eval_single_mtx.py
 ```
 
-Note: You have to set the correct parameters (such as transformation type - "Flatten" or "Virtualize") inside settings.py. Also, set the embedding size correctly in train.py. Also, utils.py (line 226 to 230) and utils_cflg.py (line 230 to 234) should be set correctly according to the transformation used. Repeat the above steps for all the three graph-based models: Cirrina, Gemini-trp, and Palmtree. 
+Note: You have to set the correct parameters (such as transformation type - "Flatten" or "Virtualize") inside settings.py. Also, set the embedding size correctly in train.py (line 22). Also, utils.py (line 226 to 230) and utils_cflg.py (line 230 to 234) should be set correctly according to the transformation used. Repeat the above steps for all the three graph-based models: Cirrina, Gemini-trp, and Palmtree. 
 
 "python3 eval_single_mtx.py" will insert the final cosine scores inside MongoDB for all the three graph-based models. 
 
