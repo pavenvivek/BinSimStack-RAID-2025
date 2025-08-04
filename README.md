@@ -111,7 +111,7 @@ python3 eval_cmb.py
 
 Note: Set the weights for different models (refer to the paper) inside utils_top_stat.py (line 283 to 285).
 
-## Sample output for OpenSSL and Flatten
+## Sample output for library "OpenSSL" and transformation "Flatten"
 
 ```
 BinSimStack:
