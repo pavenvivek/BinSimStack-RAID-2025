@@ -109,137 +109,138 @@ Once we have the cosine scores for all the models, we can run the following comm
 python3 eval_cmb.py
 ```
 
-Note: Set the weights for different models (refer to the paper) inside utils_top_stat.py (line 283 to 285). Also, we have given the sample db files that contain the output of running the above commands for library "OpenSSL" and transformation "Flatten" inside db_files.tar.xz.
+Note: Set the weights for different models (refer to the paper) inside utils_top_stat.py (line 283 to 285).
 
 ## Sample output for OpenSSL and Flatten
 
 ```
 BinSimStack:
-top_1 -> 95.25547445255475
+top_1 -> 93.97810218978103
 top_2 -> 97.99270072992701
-top_3 -> 98.72262773722628
-top_4 -> 99.45255474452554
+top_3 -> 98.9963503649635
+top_4 -> 99.54379562043796
 top_5 -> 99.90875912408758
-top_7 -> 100.0
+top_7 -> 99.90875912408758
 top_10 -> 100.0
 top_15 -> 100.0
 top_20 -> 100.0
 top_25 -> 100.0
 top_50 -> 100.0
 top_100 -> 100.0
-MRR -> 97.15415363225583
+MRR -> 96.53994322789944
 
 
 Top-1
 -------------------
-Cirrina        : total -> 45.52919708029197, unique -> bef. aggregate: 0.45620437956204374, aft. aggregate: 0.18248175182481752 
-Gemini_triplet : total -> 71.62408759124088, unique -> bef. aggregate: 1.2773722627737227, aft. aggregate: 0.6386861313868614 
-Palmtree       : total -> 73.35766423357664, unique -> bef. aggregate: 3.102189781021898, aft. aggregate: 0.09124087591240876 
-jTrans         : total -> 86.67883211678831, unique -> bef. aggregate: 5.383211678832116, aft. aggregate: 0.36496350364963503 
-BinSimStack    : total -> 95.25547445255475, unique -> 1.2773722627737227 
-Agg. missed    : total -> 1.4598540145985401 
-Agg. retained  : total -> 93.97810218978103 
-Model union    : total -> 95.43795620437956 
+Cirrina        : total -> 45.52919708029197, unique -> bef. aggregate: 0.18248175182481752, aft. aggregate: 0.0 
+Gemini_triplet : total -> 71.44160583941606, unique -> bef. aggregate: 1.0036496350364963, aft. aggregate: 0.09124087591240876 
+Palmtree       : total -> 73.35766423357664, unique -> bef. aggregate: 2.9197080291970803, aft. aggregate: 2.281021897810219 
+jTrans         : total -> 89.59854014598541, unique -> bef. aggregate: 6.021897810218978, aft. aggregate: 0.0 
+BinSimStack      : total -> 93.97810218978103, unique -> 0.9124087591240875 
+Agg. missed    : total -> 2.8284671532846715 
+Agg. retained  : total -> 93.06569343065694 
+Model union    : total -> 95.8941605839416 
 
 Top-1 info:
-Model_wt_aggregate : 95.25547445255475 
-Model_or_pred      : 97.71897810218978
-Model_and_pred     : 30.38321167883212
-Model_vote_pred    : 80.38321167883211
-Model_best_pred    : 95.25547445255475
-Model_wt_best_pred : 95.25547445255475
+Model_wt_aggregate : 95.71167883211679 
+Model_or_pred      : 97.62773722627736
+Model_and_pred     : 30.83941605839416
+Model_vote_pred    : 80.74817518248175
+Model_best_pred    : 95.8029197080292
+Model_wt_best_pred : 95.43795620437956
 -------------------
 
 
 Top-2
 -------------------
-Cirrina        : total -> 60.85766423357665, unique -> bef. aggregate: 0.2737226277372263, aft. aggregate: 0.2737226277372263 
-Gemini_triplet : total -> 82.66423357664233, unique -> bef. aggregate: 0.2737226277372263, aft. aggregate: 0.18248175182481752 
-Palmtree       : total -> 83.94160583941606, unique -> bef. aggregate: 1.1861313868613137, aft. aggregate: 0.0 
-jTrans         : total -> 94.25182481751825, unique -> bef. aggregate: 3.102189781021898, aft. aggregate: 0.2737226277372263 
-BinSimStack    : total -> 97.99270072992701, unique -> 0.09124087591240876 
-Agg. missed    : total -> 0.9124087591240875 
+Cirrina        : total -> 60.94890510948905, unique -> bef. aggregate: 0.18248175182481752, aft. aggregate: 0.0 
+Gemini_triplet : total -> 82.75547445255475, unique -> bef. aggregate: 0.36496350364963503, aft. aggregate: 0.0 
+Palmtree       : total -> 83.94160583941606, unique -> bef. aggregate: 1.0036496350364963, aft. aggregate: 0.9124087591240875 
+jTrans         : total -> 95.34671532846716, unique -> bef. aggregate: 3.2846715328467155, aft. aggregate: 0.0 
+BinSimStack      : total -> 97.99270072992701, unique -> 0.09124087591240876 
+Agg. missed    : total -> 1.094890510948905 
 Agg. retained  : total -> 97.90145985401459 
-Model union    : total -> 98.8138686131387 
+Model union    : total -> 98.9963503649635 
 
 Top-2 info:
-Model_wt_aggregate : 97.99270072992701 
-Model_or_pred      : 99.17883211678831
-Model_and_pred     : 46.25912408759124
+Model_wt_aggregate : 98.72262773722628 
+Model_or_pred      : 99.08759124087592
+Model_and_pred     : 46.62408759124087
 Model_vote_pred    : 89.87226277372264
-Model_best_pred    : 98.17518248175182
-Model_wt_best_pred : 98.17518248175182
+Model_best_pred    : 98.35766423357664
+Model_wt_best_pred : 98.44890510948905
 -------------------
 
 
 Top-3
 -------------------
-Cirrina        : total -> 69.7080291970803, unique -> bef. aggregate: 0.2737226277372263, aft. aggregate: 0.2737226277372263 
-Gemini_triplet : total -> 87.40875912408758, unique -> bef. aggregate: 0.36496350364963503, aft. aggregate: 0.2737226277372263 
-Palmtree       : total -> 87.86496350364963, unique -> bef. aggregate: 0.36496350364963503, aft. aggregate: 0.0 
-jTrans         : total -> 97.17153284671532, unique -> bef. aggregate: 1.551094890510949, aft. aggregate: 0.36496350364963503 
-BinSimStack    : total -> 98.72262773722628, unique -> 0.0 
-Agg. missed    : total -> 1.0036496350364963 
-Agg. retained  : total -> 98.72262773722628 
-Model union    : total -> 99.72627737226277 
+Cirrina        : total -> 69.52554744525547, unique -> bef. aggregate: 0.18248175182481752, aft. aggregate: 0.09124087591240876 
+Gemini_triplet : total -> 87.5, unique -> bef. aggregate: 0.36496350364963503, aft. aggregate: 0.2737226277372263 
+Palmtree       : total -> 87.86496350364963, unique -> bef. aggregate: 0.36496350364963503, aft. aggregate: 0.36496350364963503 
+jTrans         : total -> 97.99270072992701, unique -> bef. aggregate: 1.7335766423357664, aft. aggregate: 0.0 
+BinSimStack      : total -> 98.9963503649635, unique -> 0.0 
+Agg. missed    : total -> 0.8211678832116789 
+Agg. retained  : total -> 98.9963503649635 
+Model union    : total -> 99.81751824817519 
 
 Top-3 info:
-Model_wt_aggregate : 98.72262773722628 
+Model_wt_aggregate : 99.36131386861314 
 Model_or_pred      : 99.90875912408758
-Model_and_pred     : 55.47445255474452
-Model_vote_pred    : 92.7007299270073
-Model_best_pred    : 98.90510948905109
-Model_wt_best_pred : 98.90510948905109
+Model_and_pred     : 56.02189781021898
+Model_vote_pred    : 92.7919708029197
+Model_best_pred    : 99.17883211678831
+Model_wt_best_pred : 99.36131386861314
 -------------------
 
 
 Top-4
 -------------------
-Cirrina        : total -> 75.63868613138686, unique -> bef. aggregate: 0.09124087591240876, aft. aggregate: 0.0 
+Cirrina        : total -> 75.72992700729927, unique -> bef. aggregate: 0.0, aft. aggregate: 0.0 
 Gemini_triplet : total -> 91.42335766423358, unique -> bef. aggregate: 0.0, aft. aggregate: 0.0 
-Palmtree       : total -> 90.23722627737226, unique -> bef. aggregate: 0.2737226277372263, aft. aggregate: 0.0 
-jTrans         : total -> 98.17518248175182, unique -> bef. aggregate: 1.2773722627737227, aft. aggregate: 0.2737226277372263 
-BinSimStack    : total -> 99.45255474452554, unique -> 0.0 
+Palmtree       : total -> 90.32846715328468, unique -> bef. aggregate: 0.2737226277372263, aft. aggregate: 0.2737226277372263 
+jTrans         : total -> 98.8138686131387, unique -> bef. aggregate: 1.3686131386861315, aft. aggregate: 0.0 
+BinSimStack      : total -> 99.54379562043796, unique -> 0.0 
 Agg. missed    : total -> 0.2737226277372263 
-Agg. retained  : total -> 99.45255474452554 
-Model union    : total -> 99.72627737226277 
+Agg. retained  : total -> 99.54379562043796 
+Model union    : total -> 99.81751824817519 
 
 Top-4 info:
-Model_wt_aggregate : 99.45255474452554 
+Model_wt_aggregate : 99.81751824817519 
 Model_or_pred      : 99.90875912408758
-Model_and_pred     : 62.5
-Model_vote_pred    : 95.52919708029196
-Model_best_pred    : 99.45255474452554
-Model_wt_best_pred : 99.45255474452554
+Model_and_pred     : 63.503649635036496
+Model_vote_pred    : 95.62043795620438
+Model_best_pred    : 99.72627737226277
+Model_wt_best_pred : 99.81751824817519
 -------------------
 
 
 Top-5
 -------------------
-Cirrina        : total -> 80.38321167883211, unique -> bef. aggregate: 0.0, aft. aggregate: 0.0 
+Cirrina        : total -> 80.47445255474453, unique -> bef. aggregate: 0.0, aft. aggregate: 0.0 
 Gemini_triplet : total -> 93.33941605839416, unique -> bef. aggregate: 0.0, aft. aggregate: 0.0 
-Palmtree       : total -> 91.97080291970804, unique -> bef. aggregate: 0.0, aft. aggregate: 0.0 
-jTrans         : total -> 99.45255474452554, unique -> bef. aggregate: 1.0036496350364963, aft. aggregate: 0.09124087591240876 
-BinSimStack    : total -> 99.90875912408758, unique -> 0.09124087591240876 
-Agg. missed    : total -> 0.09124087591240876 
-Agg. retained  : total -> 99.81751824817519 
+Palmtree       : total -> 92.06204379562044, unique -> bef. aggregate: 0.09124087591240876, aft. aggregate: 0.0 
+jTrans         : total -> 99.81751824817519, unique -> bef. aggregate: 1.0036496350364963, aft. aggregate: 0.0 
+BinSimStack      : total -> 99.90875912408758, unique -> 0.0 
+Agg. missed    : total -> 0.0 
+Agg. retained  : total -> 99.90875912408758 
 Model union    : total -> 99.90875912408758 
 
 Top-5 info:
 Model_wt_aggregate : 99.90875912408758 
 Model_or_pred      : 100.0
-Model_and_pred     : 68.43065693430657
-Model_vote_pred    : 97.26277372262774
-Model_best_pred    : 99.81751824817519
-Model_wt_best_pred : 99.81751824817519
+Model_and_pred     : 69.06934306569343
+Model_vote_pred    : 97.53649635036497
+Model_best_pred    : 99.90875912408758
+Model_wt_best_pred : 99.90875912408758
 -------------------
 
 
 AUC Readings:
 -------------------------------------
-Cirrina  average accuracy after 1 runs: 99.64561877145618
+Cirrina  average accuracy after 1 runs: 99.64578542145786
 Gemini   average accuracy after 1 runs: 99.84176582341766
-Palmtree average accuracy after 1 runs: 99.75752424757525
-jTrans   average accuracy after 1 runs: 99.9751691497517
-Average accuracy combined (BinSimStack) after 1 runs: 99.99200079992
+Palmtree average accuracy after 1 runs: 99.75769089757691
+jTrans   average accuracy after 1 runs: 99.98275172482751
+Average accuracy combined (BinSimStack) after 1 runs: 99.99100089991
+
 ```
